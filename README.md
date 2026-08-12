@@ -4,17 +4,26 @@ Personal skill set for plan-tree driven development. The core problem it solves:
 
 ## Install
 
+### Claude Code
+
+```
+/plugin marketplace add 0xdead4f/skills
+/plugin install dev-skills@0xdead4f
+```
+
+### Codex, and other agents
+
 ```sh
 npx skills@latest add 0xdead4f/skills
 ```
 
-Works for Claude Code, Codex, and every agent the [skills CLI](https://github.com/vercel-labs/skills) supports. Add `-s <name>` to pick specific skills.
+Add `-s <name>` to pick specific skills.
 
 ## Skills
 
 | Skill | What it does |
 | --- | --- |
-| `my-development-style` | The workflow: Abstraction → Sketch → Model → Decompose → Build. One `docs/plan/` tree per project, one PLAN.md per component, custody rules, orphan audit. |
+| `lets-build` | The workflow: Abstraction → Model → Sketch → Decompose → Build. Every phase is brainstormed and refined with the human until approved. One `docs/plan/` tree per project, one PLAN.md per component, custody rules, orphan audit. |
 | `grilling` / `grill-me` | Relentless interview to pull the idea out of your head. |
 | `domain-modeling` | CONTEXT.md glossary + ADRs. |
 | `codebase-design` | Module / interface / seam / depth vocabulary. |
@@ -24,18 +33,22 @@ Works for Claude Code, Codex, and every agent the [skills CLI](https://github.co
 
 ## The workflow
 
+Every phase: **propose → human reviews → refine → refine → approved**, then the next phase.
+
 ```
-my-development-style ── docs/plan/ tree in each project + custody rules
+lets-build ── docs/plan/ tree in each project + custody rules
  ├─ 1. Abstraction  → grilling          (pull the idea out of your head,
  │                                       write ABSTRACTION.md)
- ├─ 2. Sketch       → prototype         (ASCII wireframes; runnable demos)
- ├─ 3. Model        → domain-modeling   (CONTEXT.md glossary, ADRs)
+ ├─ 2. Model        → domain-modeling   (CONTEXT.md glossary, ADRs)
  │                    codebase-design   (module/interface/seam language)
+ ├─ 3. Sketch                           (ASCII wireframes, 2–3 options)
  ├─ 4. Decompose                        (MASTER.md + one PLAN.md per
  │                                       component, agreed one by one)
  └─ 5. Build        → handoff           (custody loop, records/, status,
                                          orphan audit)
 ```
+
+Everything a project accumulates lives in one folder: `docs/plan/`.
 
 ## Credits
 

@@ -1,0 +1,27 @@
+{
+  "name": "dev-skills",
+  "version": "1.0.0",
+  "description": "Plan-tree driven development skills — never lose custody of what the AI builds.",
+  "author": {
+    "name": "0xdead4f"
+  },
+  "repository": "https://github.com/0xdead4f/skills",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "workflow",
+    "grilling",
+    "domain-modeling",
+    "skills"
+  ],
+  "skills": [
+    "./skills/lets-build",
+    "./skills/grilling",
+    "./skills/grill-me",
+    "./skills/domain-modeling",
+    "./skills/codebase-design",
+    "./skills/prototype",
+    "./skills/handoff",
+    "./skills/skills-best-practices"
+  ]
+}

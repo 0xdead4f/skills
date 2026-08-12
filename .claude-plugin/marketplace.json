@@ -1,0 +1,22 @@
+{
+  "name": "0xdead4f",
+  "owner": {
+    "name": "0xdead4f"
+  },
+  "description": "Plan-tree driven development skills — never lose custody of what the AI builds.",
+  "plugins": [
+    {
+      "name": "dev-skills",
+      "source": "./",
+      "description": "lets-build workflow (abstraction → model → sketch → decompose → build) plus grilling, domain-modeling, codebase-design, prototype, handoff, and skills-best-practices.",
+      "category": "engineering",
+      "keywords": [
+        "planning",
+        "workflow",
+        "grilling",
+        "domain-modeling",
+        "skills"
+      ]
+    }
+  ]
+}
